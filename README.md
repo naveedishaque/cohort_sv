@@ -57,7 +57,11 @@ R -f make_cohort_SV_circlize_plot.R --args [output from process_SV_for_circos] 6
 
 This will create a PDF of 3 pages, describing genes that are (i) hit directly, (ii) close to a gene, i.e defined by the `sv_close` parameter in `process_SV_for_circos.pl`, and (iii) to the nearest gene.
 
+## Known isues
+
 **If you have problems with circos reporting `Error: nrow of "region1" and "region2" differ.` then you will need to remove entries that are not on the usual autosomes**
+
+I find that the gene SGCD offten occurs to be recurrent, but this might be a false positive.
 
 ## Versioning
 
